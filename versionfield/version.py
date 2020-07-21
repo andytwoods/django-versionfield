@@ -1,11 +1,8 @@
 import six
 
-from django.utils.encoding import python_2_unicode_compatible
-
 from .utils import convert_version_string_to_int, convert_version_int_to_string
 
 
-@python_2_unicode_compatible
 class Version(object):
     def __init__(self, string, number_bits):
         """
