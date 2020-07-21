@@ -42,7 +42,7 @@ class VersionField(models.Field):
             self.number_bits
         )
 
-    def from_db_value(self, value, expression, connection, , *args, **kwargs):
+    def from_db_value(self, value, expression, connection, *args, **kwargs):
         """Convert data from database."""
         if value is None:
             return value
