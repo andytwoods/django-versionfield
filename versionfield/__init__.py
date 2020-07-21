@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 import six
 
 from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
 
 from . import forms
 from .constants import DEFAULT_NUMBER_BITS
@@ -11,7 +10,6 @@ from .version import Version
 from .utils import convert_version_int_to_string
 
 
-@python_2_unicode_compatible
 class VersionField(models.Field):
 
     """
